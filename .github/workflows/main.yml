@@ -15,6 +15,11 @@ jobs:
       with:
         # Disabling shallow clone is recommended for improving relevancy of reporting
         path: frontend
+    - name: SonarQube Scan
+      uses: kitabisa/sonarqube-action@v1.2.0
+      with:
+        host: ${{ secrets.SONARQUBE_HOST }}
+        login: ${{ secrets.SONARQUBE_TOKEN }}
    
         
         
