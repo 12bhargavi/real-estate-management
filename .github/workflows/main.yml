@@ -19,12 +19,12 @@ jobs:
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       with:
-         projectBaseDir:
+         projectBaseDir: app/src
          args: >
-         -Dsonar.projectKey=giri_project 
-         -Dsonar.sources=. 
-         -Dsonar.host.url=http://13.126.0.103:9000 
-         -Dsonar.login=8de7e455c94b7d5909d2e1ea2261967c8df1abc2
+           -Dsonar.projectKey=giri_project 
+           -Dsonar.sources=. 
+           -Dsonar.host.url=http://13.126.0.103:9000 
+           -Dsonar.login=8de7e455c94b7d5909d2e1ea2261967c8df1abc2
          
      
   
